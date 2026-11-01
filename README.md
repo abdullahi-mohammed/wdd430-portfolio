@@ -4,11 +4,7 @@ A modern, responsive portfolio application built with **Next.js 16**, **React 19
 
 ## 🌐 Live Deployment
 
-- **Vercel Production URL**: [https://wdd430-portfolio-eosin.vercel.app/](https://wdd430-portfolio-eosin.vercel.app/) *(Replace with your live Vercel URL once deployed)*
-
-> **Note on Vercel Deployment Protection:**
-> To ensure peer reviewers and instructors can access the live site without authentication barriers, Vercel Authentication is disabled under:
-> `Project Settings` &rarr; `Deployment Protection` &rarr; `Vercel Authentication: Disabled`.
+- **Vercel Production URL**: [https://wdd430-portfolio-eosin.vercel.app/](https://wdd430-portfolio-eosin.vercel.app/)
 
 ---
 
