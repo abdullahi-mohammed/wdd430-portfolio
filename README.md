@@ -1,36 +1,103 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# WDD 430 - Web Frontend Development Portfolio
 
-## Getting Started
+A modern, responsive portfolio application built with **Next.js 16**, **React 19**, **TypeScript**, and **Tailwind CSS**.
 
-First, run the development server:
+## 🌐 Live Deployment
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **Vercel Production URL**: [https://wdd430-portfolio-abdullahi.vercel.app](https://wdd430-portfolio-abdullahi.vercel.app) *(Replace with your live Vercel URL once deployed)*
+
+> **Note on Vercel Deployment Protection:**
+> To ensure peer reviewers and instructors can access the live site without authentication barriers, Vercel Authentication is disabled under:
+> `Project Settings` &rarr; `Deployment Protection` &rarr; `Vercel Authentication: Disabled`.
+
+---
+
+## 🚀 Features
+
+- **Component Architecture**: Built entirely with React Server Components (`Header`, `ProjectCard`, `ProjectList`, `Footer`, `SkillsCard`) without client-side overhead.
+- **Component Composition & TypeScript**: Strict type definitions (`interface`) for props with type safety and modular reusability.
+- **Client-Side Navigation**: Seamless page transitions using Next.js `Link` for internal routing (`/` and `/about`).
+- **File-Based Routing**: Next.js App Router structure with dedicated pages for Home and About, plus backend API endpoints.
+- **API Route**: Backend GET endpoint at `/api/hello` returning JSON responses.
+- **Accessible & Responsive Design**: Styled with Tailwind CSS, supporting mobile, tablet, and desktop viewports, with WCAG AA compliant color contrast ratios.
+
+---
+
+## 📁 Project Structure
+
+```text
+wdd430-portfolio/
+├── app/
+│   ├── about/
+│   │   └── page.tsx           # About page with SkillsCard custom component
+│   ├── api/
+│   │   └── hello/
+│   │       └── route.ts       # Backend API demonstration route
+│   ├── favicon.ico
+│   ├── globals.css            # Global styling and Tailwind imports
+│   ├── layout.tsx             # Root layout with Header and Footer
+│   └── page.tsx               # Home page showcasing featured projects
+├── components/
+│   ├── Footer.tsx             # Server Component with dynamic copyright year
+│   ├── Header.tsx             # Server Component with navigation links
+│   ├── ProjectCard.tsx        # Reusable card component for single project
+│   ├── ProjectList.tsx        # Responsive grid mapping project cards
+│   └── SkillsCard.tsx         # Custom reusable card component for skills
+├── public/                    # Static assets
+├── package.json
+├── tsconfig.json
+└── README.md
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🛠️ Getting Started
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Prerequisites
 
-## Learn More
+- Node.js (v18.18.0 or later recommended)
+- npm or pnpm
 
-To learn more about Next.js, take a look at the following resources:
+### Installation
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/abdullahi-mohammed/wdd430-portfolio.git
+   cd wdd430-portfolio
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-## Deploy on Vercel
+3. Run the development server:
+   ```bash
+   npm run dev
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+5. Test the API route at [http://localhost:3000/api/hello](http://localhost:3000/api/hello).
+
+---
+
+## 🧪 Build and Linting
+
+- **Type Check & Build**:
+  ```bash
+  npm run build
+  ```
+
+- **Lint Code**:
+  ```bash
+  npm run lint
+  ```
+
+---
+
+## 👤 Author
+
+- **Name**: Abdullahi Mohammed
+- **Course**: WDD 430 - Web Frontend Development (BYU-Idaho)
+- **GitHub**: [@abdullahi-mohammed](https://github.com/abdullahi-mohammed)
